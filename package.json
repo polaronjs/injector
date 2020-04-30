@@ -1,0 +1,40 @@
+{
+  "name": "@phantomcms/injector",
+  "version": "1.0.0",
+  "description": "A system for basic dependency injection in Typescript",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "scripts": {
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "test": "echo \"No tests specified\"",
+    "prepack": "npm run build && cp package.json ./dist && cp README.md ./dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/phantomcms/injector.git"
+  },
+  "author": "Nick Winner",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/phantomcms/injector/issues"
+  },
+  "homepage": "https://github.com/phantomcms/injector#readme",
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  },
+  "devDependencies": {
+    "husky": "^4.2.5",
+    "np": "^6.2.3",
+    "prettier": "^2.0.5",
+    "pretty-quick": "^2.0.1",
+    "ts-node": "^8.9.1",
+    "tslint-plugin-prettier": "^2.3.0",
+    "typescript": "^3.8.3"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
