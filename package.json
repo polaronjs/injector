@@ -8,7 +8,7 @@
     "start": "ts-node src/index.ts",
     "build": "tsc",
     "test": "echo \"No tests specified\"",
-    "prepack": "npm run build && cp package.json ./dist && cp README.md ./dist",
+    "postversion": "npm run build && cp package.json ./dist && cp README.md ./dist",
     "release": "np --contents dist"
   },
   "repository": {
