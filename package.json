@@ -8,8 +8,8 @@
     "start": "ts-node src/index.ts",
     "build": "tsc",
     "test": "echo \"No tests specified\"",
-    "prepublish": "npm run build",
-    "release": "np --yarn false"
+    "prepublish": "npm run build cp package.json ./dist && cp README.md ./dist",
+    "release": "np --contents dist"
   },
   "repository": {
     "type": "git",
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "husky": "^4.2.5",
-    "np": "^5.2.1",
+    "np": "^6.2.3",
     "prettier": "^2.0.5",
     "pretty-quick": "^2.0.1",
     "ts-node": "^8.9.1",
