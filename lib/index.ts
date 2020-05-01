@@ -131,7 +131,7 @@ function resolveContructorDependencies(token: Injectable<any>) {
         orderedDepdencies.push(dependency);
       } else {
         throw new Error(
-          `Error resolving dependencies for ${token.name}: cannot resolve dependency '${dependency}'`
+          `Error resolving dependencies for ${token.name}: cannot resolve dependency '${x.name}'`
         );
       }
     });
