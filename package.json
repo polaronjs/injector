@@ -1,6 +1,6 @@
 {
   "name": "@phantomcms/injector",
-  "version": "1.0.0",
+  "version": "0.0.0",
   "description": "A system for basic dependency injection in Typescript",
   "main": "index.js",
   "types": "index.d.ts",
@@ -8,7 +8,7 @@
     "start": "ts-node src/index.ts",
     "build": "tsc",
     "test": "echo \"No tests specified\"",
-    "prepack": "npm run build && cp package.json ./dist && cp README.md ./dist"
+    "prepack": "npm run build && cp package.json ./dist && cp README.md ./dist && cd ./dist"
   },
   "repository": {
     "type": "git",
